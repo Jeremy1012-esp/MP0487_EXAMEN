@@ -44,10 +44,10 @@ class EventController
     }
 
 
-    public function updateEvent($Id_Evento, $nombre, $descripcion, $fecha_evento, $ubicacion)
+    public function updateEvent($id, $nombre, $descripcion, $fecha, $ubicacion)
     {
 
-        return $this->model->updateEvent($Id_Evento, $nombre, $descripcion, $fecha_evento, $ubicacion);
+        return $this->model->updateEvent($id, $nombre, $descripcion, $fecha, $ubicacion);
 
 
     }

@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
     $resultado = $eventController->updateEvent($id, $nombre, $descripcion, $fecha, $ubicacion);
 
-    if ($resultado === 'ok') {
+    if ($resultado = 'ok') {
         header("Location: editarEvento.php?id=$id&updated=1");
         exit();
     } else {
